@@ -1,0 +1,136 @@
+/* @import some font from google font */
+
+:root{
+ /* font-family:; */
+ font-size:100%;
+ --borderRed:2px red solid;
+ --borderBlack:2px black solid;
+ --borderGreen:2px green solid;
+ --borderBlue:2px blue solid;
+ --borderYellow:2px yellow solid;
+}
+
+*{
+ margin:0;
+ padding:0;
+ box-sizing: border-box;
+}
+
+body{
+ height:120vw;
+}
+
+
+/* ________________________________________
+NAV BAR
+________________________________________ */
+/* #backToTop{
+ display:none;
+} */
+
+
+nav{
+ /* border:var(--borderBlack); */
+ display:flex;
+ flex-flow: row nowrap;
+ /* justify-content: space-between; */
+ /* align-items:stretch; */
+ width:100%;
+ position:fixed;
+ top:0;
+ /* background-color: rgb(250, 250, 250, 0.1); */
+  /* background-color:black; */
+ /* background: linear-gradient(90deg,
+ rgba(131,58,180,1) 0%,
+ rgba(253,29,29,1) 50%,
+ rgba(252,176,69,1) 100%); */
+}
+
+nav #logo{
+ width:100%;
+ /* border:var(--borderRed); */
+ display:flex;
+ /* justify-content: start; */
+}
+
+nav #logo img{
+ /* border:var(--borderGreen); */
+ max-width:100%;
+ margin:0;
+ padding:0;
+
+ /* align-items: stretch; */
+ /* display:block; */
+}
+
+
+
+nav ul {
+ /* border: var(--borderRed); */
+ list-style-type: none;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+nav ul li {
+ /* border: var(--borderBlue); */
+ display: flex;
+ width: 100%;
+}
+
+nav ul li a {
+ /* border: var(--borderGreen); */
+ text-decoration: none;
+ color: black;
+ font-weight: 900;
+ padding: 2vw;
+ width: 100%;
+ text-align: center;
+}
+
+nav ul li a:hover {
+ background:#eee;
+}
+
+
+/* ________________________________________
+SECTION WITH THE ONLY H1
+________________________________________ */
+
+#sectionWithH1{
+ margin-top:5.8vw;
+ padding:2vw;
+}
+
+
+
+
+/* ________________________________________
+MAIN SECTION
+________________________________________ */
+
+
+
+
+
+
+/* ________________________________________
+(VIDEO)
+________________________________________ */
+
+
+
+
+
+/* ________________________________________
+PRICES
+________________________________________ */
+
+
+
+
+/* ________________________________________
+FOOTER
+________________________________________ */
