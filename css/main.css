@@ -63,8 +63,6 @@ nav #logo img{
  /* display:block; */
 }
 
-
-
 nav ul {
  /* border: var(--borderRed); */
  list-style-type: none;
@@ -100,34 +98,296 @@ SECTION WITH THE ONLY H1
 ________________________________________ */
 
 #sectionWithH1{
- margin-top:5.8vw;
- padding:2vw;
+ /* border:var(--borderBlack); */
+ display:flex;
+ flex-flow:column wrap;
+ justify-content: center;
+ align-content: center;
+ margin:10.8vw auto 4.2vw auto;
 }
 
+#sectionWithH1 h1{
+ /* border:var(--borderBlue); */
+ /* width:100%; */
+ text-align: center;
+ /* text-align: center; */
+ /* margin:0 0 0.8vw 0; */
+}
 
+#sectionWithH1 input{
+ /* border:var(--borderGreen); */
+ width:300px;
+ margin:1.2vw auto 0.2vw;
+ border-radius: 6px;
+ border:none;
+ background-color: violet;
+ padding:0.2vw;
+}
 
+#sectionWithH1 input::placeholder{
+ color:black;
+ text-align: center;
+}
+
+#sectionWithH1 button{
+ /* border:var(--borderRed); */
+ margin: 0.6vw auto;
+ width:200px;
+ border-radius: 6px;
+ border:none;
+ text-transform: uppercase;
+ padding:0.5vw;
+ font-weight: 900;
+ background-color: goldenrod;
+}
 
 /* ________________________________________
 MAIN SECTION
 ________________________________________ */
 
 
+main{
+ /* border:var(--borderYellow); */
+ /* height:80%; */
+ width:650px;
+ margin: 2vw auto;
+ display:grid;
+ grid-template:
+ [row1-start] ". PM" auto [row1-end]
+ [row2-start] "IF TOPM" auto [row2-end]
+ [row3-start] ". PES" auto [row3-end]
+ [row4-start] "IT TOPES" auto [row4-end]
+ [row5-start] ". QA" auto [row5-end]
+ [row6-start] "IB TOQA" auto [row6-end]
+ / [column1-start] 1fr [column2-start] auto [column3-start];
+}
 
+.iconFeatures{
+ margin-right:1.5vw;
+}
 
+#iconFire{
+ grid-area:IF;
+}
+
+#premiumMaterials{
+ grid-area:PM;
+ /* border:var(--borderGreen); */
+}
+
+#textOfPremiumMaterials{
+ grid-area:TOPM;
+ /* border:var(--borderRed); */
+}
+
+#iconTruck{
+ grid-area:IT;
+ /* border:var(--borderBlack); */
+}
+
+#premiumEastShipping{
+ grid-area:PES;
+ margin-top:2vw;
+ /* border:var(--borderGreen); */
+}
+
+#textOfPremiumEastShipping{
+ grid-area:TOPES;
+ /* border:var(--borderRed); */
+}
+
+#iconBattery{
+ grid-area:IB;
+ /* border:var(--borderBlack); */
+}
+
+#qualityAssurance{
+ grid-area:QA;
+ margin-top:2vw;
+ /* border:var(--borderGreen); */
+}
+
+#textOfQualityAssurance{
+ grid-area:TOQA;
+ /* border:var(--borderRed); */
+}
 
 
 /* ________________________________________
-(VIDEO)
+VIDEO FROM YOUTUBE
 ________________________________________ */
 
-
-
-
+iframe{
+ display:flex;
+ width:500px;
+ height:300px;
+ margin:3vw auto;
+ border-radius: 6px;
+ box-shadow: 1px 1px 7px 2px black;
+}
 
 /* ________________________________________
 PRICES
 ________________________________________ */
 
+#containerOfAllTheCartToSell{
+ border:var(--borderGreen);
+ width:100%;
+ /* height: 12%; */
+ margin:auto;
+ display:flex;
+ flex-flow: row wrap;
+ justify-content: center;
+
+}
+
+#sectionOfTenorTrombone{
+ border:var(--borderBlack);
+ /* border:1px black solid; */
+ border-top-left-radius: 40px;
+ width:250px;
+ height: 300px;
+ margin:0 2vw 0 0;
+ display:grid;
+ grid-template:
+ [row1-start] "TitleTT" auto [row1-end]
+ [row2-start] "PriceTT " auto [row2-end]
+ [row3-start] "TextTT " auto [row3-end]
+ [row4-start] "ButtonTT " auto [row4-end]
+ / [column1-start] 1fr [column2-start];
+ /* width:33%; */
+ /* height: 30%; */
+ /* margin:auto auto auto 1.2vw; */
+ justify-items: center;
+ align-items: center;
+ /* border-radius: 6px; */
+}
+
+/* .titleOfCartToSell, priceOfCartToSell, someTextOfCartToSell, buttonOfCartToSell {
+ text-align: center;
+ height:100%;
+} */
+
+.titleOfCartToSell{
+ background-color:whitesmoke;
+ border-radius: 60px;
+ display:flex;
+ height: 100%;
+ width:100%;
+ justify-content: center;
+ align-items: center;
+}
+
+.priceOfCartToSell{
+ font-weight: 900;
+ font-size: 1.5rem;
+}
+
+.someTextOfCartToSell{
+ text-align: center;
+}
+
+.buttonOfCartToSell{
+ border:none;
+ padding:13px 35px;
+ border-radius:6px;
+}
+
+.buttonOfCartToSell:hover{
+ background-color: green;
+ color:white;
+ cursor: pointer;
+}
+
+
+#titlteTenorTrombone{
+ grid-area:TitleTT;
+ /* background-color:gray; */
+ /* width:100%; */
+ /* text-align: center; */
+ /* vertical-align: bottom; */
+}
+
+#priceTenorTrombone{
+ grid-area:PriceTT;
+}
+
+#textTenorTrombone{
+ grid-area:TextTT;
+}
+
+#buttonTenorTrombone{
+ grid-area:ButtonTT;
+}
+
+#sectionOfBassTrombone{
+ border:var(--borderRed);
+ width:250px;
+ height: 300px;
+ margin:0 2vw 0 0;
+ display:grid;
+ grid-template:
+  [row1-start] "TitleBT " auto [row1-end]
+  [row2-start] "PriceBT" auto [row2-end]
+  [row3-start] "TextBT" auto [row3-end]
+  [row4-start] "ButtonBT" auto [row4-end]
+  / [column1-start] 1fr [column2-start]
+ ;
+ justify-items: center;
+ align-items: center;
+ border-radius: 6px;
+}
+
+#tittleBassTrombone{
+ grid-area:TitleBT;
+}
+
+#priceBassTrombone{
+ grid-area:PriceBT;
+}
+
+#textBassTrombone{
+ grid-area:TextBT;
+}
+
+#buttonBassTrombone{
+ grid-area:ButtonBT;
+}
+
+#sectionOfValveTrombone{
+ border:var(--borderBlack);
+ width:250px;
+ height: 300px;
+ margin:0 2vw 0 0;
+ display:grid;
+ grid-template:
+ [row1-start] "TitleVT" 1fr [row1-end]
+ [row2-start] "PriceVT" 1fr [row2-end]
+ [row3-start] "TextVT" 1fr [row3-end]
+ [row4-start] "ButtonVT" 1fr [row4-end]
+ / [column1-start] 1fr [column2-start];
+ justify-items: center;
+ align-items: center;
+ border-radius: 6px;
+}
+
+
+
+#titleValveTrombone{
+ grid-area:TitleVT;
+}
+
+#priceValveTrombone{
+ grid-area:PriceVT;
+}
+
+#textValveTrombone{
+ grid-area:TextVT;
+}
+
+#buttonValveTrombone{
+ grid-area:ButtonVT;
+}
 
 
 

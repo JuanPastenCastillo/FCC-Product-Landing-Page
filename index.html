@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,108 +8,120 @@
 </head>
 
 <body>
-
-
-
   <!-- ________________________________________
  NAV BAR
 ________________________________________ -->
-  <nav id=navBar>
-    <a href="#sectionWithH1" id="logo">
-      <img src="./images/original_trombones.png" id="logo">
-    </a>
-    <ul>
-      <li>
-        <a href="#firstFeature">Features</a>
-      </li>
+ <nav id=navBar>
+  <a href="#sectionWithH1" id="logo">
+   <img src="./images/original_trombones.png" id="logo">
+  </a>
+  <ul>
+   <li>
+    <a href="#firstFeature">Features</a>
+   </li>
 
-      <li>
-        <a href="#embebedVideo">How it works</a>
-      </li>
+   <li>
+    <a href="#embebedVideo">How it works</a>
+   </li>
 
-      <li>
-        <a href="#allTheCartToSell">Pricing</a>
-      </li>
-    </ul>
-  </nav>
-
-
+   <li>
+    <a href="#allTheCartToSell">Pricing</a>
+   </li>
+  </ul>
+ </nav>
 
   <!-- ________________________________________
  SECTION WITH THE ONLY H1
 ________________________________________ -->
 
-  <section id="sectionWithH1">
-    <h1>Handcrafted, home-made masterpieces</h1>
-    <input type="email">
-    <button>Get started</button>
-  </section>
-
-
-  <!-- ________________________________________
+  <form id="sectionWithH1">
+   <h1>Handcrafted, home-made masterpieces</h1>
+   <input type="email" placeholder="Enter your email address">
+   <button>Get started</button>
+  </form>
+<!-- ________________________________________
  MAIN SECTION
 ________________________________________ -->
-  <main>
-    <div id="firstFeature">
-      <img src="" alt="iconFire">
-      <h2>Premium Materials</h2>
-      <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your
-        purchase.
-      </p>
-    </div>
+<main>
+ <img src="https://img.icons8.com/android/24/000000/fire-element.png" / id="iconFire" class="iconFeatures">
+ <h2 id="premiumMaterials" class="titleFeature">Premium Materials</h2>
+ <p id="textOfPremiumMaterials" class="textOfFeature">Our trombones use the shiniest brass which is sourced locally.
+  This will increase the longevity of your purchase.</p>
 
-    <div id="secondFeature">
-      <img src="" alt="iconTruck">
-      <h2>Premium Fast Shipping</h2>
-      <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if
-        you
-        are not satisfied.</p>
-    </div>
+ <img src="https://img.icons8.com/metro/26/000000/truck.png" / id="iconTruck" class="iconFeatures">
+ <h2 id="premiumEastShipping" class="titleFeature">Premium Fast Shipping</h2>
+ <p id="textOfPremiumEastShipping" class="textOfFeature">We make sure you recieve your trombone as soon as we have
+  finished making it. We also provide free returns if you are not satisfied.</p>
 
-    <div id="qualityAssurance">
-      <img src="" alt="iconBattery">
-      <h2>Quality Assurance</h2>
-      <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch
-        of
-        your instrument.</p>
-    </div>
-  </main>
+ <img src="https://img.icons8.com/android/24/000000/medium-battery.png" / id="iconBattery" class="iconFeatures">
+ <h2 id="qualityAssurance" class="titleFeature">Quality Assurance</h2>
+ <p id="textOfQualityAssurance" class="textOfFeature">For every purchase you make, we will ensure there are no damages
+  or faults and we will check and test the pitch of your instrument.</p>
+</main>
 
-  <!-- ________________________________________
- THERE IS SOME SEMANTICALLY CORRECT HTML
- (VIDEO)
+<!-- ________________________________________
+ VIDEO FROM YOUTUBE
 ________________________________________ -->
-  <figure id="embebedVideo">
-    Embebed video fro youtube
-  </figure>
+
+
+ <iframe src="https://www.youtube.com/embed/_u4zt3MUDr8?&mute=1&playlist=_u4zt3MUDr8&loop=1" frameborder="0"></iframe>
+
+  <!--
+    <iframe width="895" height="503" src="https://www.youtube.com/embed/_u4zt3MUDr8?autoplay=1&mute=1&playlist=_u4zt3MUDr8&loop=1" frameborder="0"></iframe>
+   -->
 
   <!-- ________________________________________
  PRICES
 ________________________________________ -->
 
-  <div id="allTheCartToSell">
-    <article id="tenorTrombone" class="individualCartToSell">
-      <p class="titleOfCartToSell">Tenor Trombone</p>
-      <p class="priceOfCartToSell">$600</p>
-      <p class="someTextOfCartToSell">Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.</p>
-      <button class="buttonOfCartToSell">Select</button>
-    </article>
+ <div id="containerOfAllTheCartToSell">
 
-    <article id="bassTrombone" class="individualCartToSell">
-      <p class="titleOfCartToSell">Bass Trombone</p>
-      <p class="priceOfCartToSell">$900</p>
-      <p class="someTextOfCartToSell">Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.</p>
-      <button class="buttonOfCartToSell">Select</button>
-    </article>
+  <section id="sectionOfTenorTrombone">
+   <h2 class="titleOfCartToSell" id="titlteTenorTrombone">
+    Tenor Trombone
+   </h2>
+   <p class="priceOfCartToSell" id="priceTenorTrombone">
+    $600
+   </p>
+   <p class="someTextOfCartToSell" id="textTenorTrombone">
+    Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.
+   </p>
+   <button class="buttonOfCartToSell" id="buttonTenorTrombone">
+    Select
+   </button>
+  </section>
 
-    <article id="valveTrombone" class="individualCartToSell">
-      <p class="titleOfCartToSell">Valve trombone</p>
-      <p class="priceOfCartToSell">$1200</p>
-      <p class="someTextOfCartToSell">PLays similar to a Trumpet. Geat for Jazz Bands. Lorem ipsum dolor. Lorem ipsum.
-      </p>
-      <button class="buttonOfCartToSell">Select</button>
-    </article>
-  </div>
+  <section id="sectionOfBassTrombone">
+   <h2 class="titleOfCartToSell" id="tittleBassTrombone">
+    Bass Trombone
+   </h2>
+   <p class="priceOfCartToSell" id="priceBassTrombone">
+    $900
+   </p>
+   <p class="someTextOfCartToSell" id="textBassTrombone">
+    Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.
+   </p>
+   <button class="buttonOfCartToSell" id="buttonBassTrombone">
+    Select
+   </button>
+  </section>
+
+  <section id="sectionOfValveTrombone">
+   <h2 class="titleOfCartToSell" id="titleValveTrombone">
+    Valve trombone
+   </h2>
+   <p class="priceOfCartToSell" id="priceValveTrombone">
+    $1200
+   </p>
+   <p class="someTextOfCartToSell" id="textValveTrombone">
+    PLays similar to a Trumpet. Geat for Jazz Bands. Lorem ipsum dolor. Lorem ipsum.
+   </p>
+   <button class="buttonOfCartToSell" id="buttonValveTrombone">
+    Select
+   </button>
+  </section>
+
+ </div>
 
   <!-- ________________________________________
  FOOTER
