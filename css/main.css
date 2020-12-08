@@ -1,64 +1,60 @@
-/* @import some font from google font */
-
-:root{
+@import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
+:root {
  /* font-family:; */
- font-size:100%;
- --borderRed:2px red solid;
- --borderBlack:2px black solid;
- --borderGreen:2px green solid;
- --borderBlue:2px blue solid;
- --borderYellow:2px yellow solid;
+ font-size: 100%;
+ --borderRed: 2px red solid;
+ --borderBlack: 2px black solid;
+ --borderGreen: 2px green solid;
+ --borderBlue: 2px blue solid;
+ --borderYellow: 2px yellow solid;
 }
 
-*{
- margin:0;
- padding:0;
+* {
+ margin: 0;
+ padding: 0;
  box-sizing: border-box;
+ font-family: 'Castoro', serif;
 }
 
-body{
- height:120vw;
+body {
+ color: #162B32;
+ background-color: whitesmoke;
 }
 
 
 /* ________________________________________
 NAV BAR
 ________________________________________ */
-/* #backToTop{
- display:none;
-} */
 
-
-nav{
+nav {
  /* border:var(--borderBlack); */
- display:flex;
+ display: flex;
  flex-flow: row nowrap;
  /* justify-content: space-between; */
  /* align-items:stretch; */
- width:100%;
- position:fixed;
- top:0;
+ width: 100%;
+ position: fixed;
+ top: 0;
  /* background-color: rgb(250, 250, 250, 0.1); */
-  /* background-color:black; */
+ /* background-color:black; */
  /* background: linear-gradient(90deg,
  rgba(131,58,180,1) 0%,
  rgba(253,29,29,1) 50%,
  rgba(252,176,69,1) 100%); */
 }
 
-nav #logo{
- width:100%;
+nav #logo {
+ width: 100%;
  /* border:var(--borderRed); */
- display:flex;
+ display: flex;
  /* justify-content: start; */
 }
 
-nav #logo img{
+nav #logo img {
  /* border:var(--borderGreen); */
- max-width:100%;
- margin:0;
- padding:0;
-
+ max-width: 100%;
+ margin: 0;
+ padding: 0;
  /* align-items: stretch; */
  /* display:block; */
 }
@@ -89,7 +85,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
- background:#eee;
+ background: #FF4838;
+ border-radius: 6px;
+}
+
+nav ul li a:active {
+ box-shadow: 1px 1px 10px 1px #162B32;
 }
 
 
@@ -97,118 +98,142 @@ nav ul li a:hover {
 SECTION WITH THE ONLY H1
 ________________________________________ */
 
-#sectionWithH1{
- /* border:var(--borderBlack); */
- display:flex;
- flex-flow:column wrap;
- justify-content: center;
- align-content: center;
- margin:10.8vw auto 4.2vw auto;
+.toMoveOnThePage {
+ border: 0;
+ clip: rect(1px, 1px, 1px, 1px);
+ clip-path: inset(50%);
+ height: 1px;
+ margin: -1px;
+ width: 1px;
+ overflow: hidden;
+ position: absolute !important;
+ word-wrap: normal !important;
 }
 
-#sectionWithH1 h1{
+#sectionWithH1 {
+ /* border:var(--borderBlack); */
+ display: flex;
+ flex-flow: column wrap;
+ justify-content: center;
+ align-content: center;
+ margin: 10.8vw auto 0 auto;
+}
+
+#sectionWithH1 h1 {
  /* border:var(--borderBlue); */
  /* width:100%; */
  text-align: center;
+ margin: 0 0 1.2vw 0;
  /* text-align: center; */
  /* margin:0 0 0.8vw 0; */
 }
 
-#sectionWithH1 input{
+.screenReaderText {
+ border: 0;
+ clip: rect(1px, 1px, 1px, 1px);
+ clip-path: inset(50%);
+ height: 1px;
+ margin: -1px;
+ width: 1px;
+ overflow: hidden;
+ position: absolute !important;
+ word-wrap: normal !important;
+}
+
+#sectionWithH1 input {
  /* border:var(--borderGreen); */
- width:300px;
- margin:1.2vw auto 0.2vw;
- border-radius: 6px;
- border:none;
- background-color: violet;
- padding:0.2vw;
+ width: 400px;
+ margin: 1.2vw auto 1.2vw;
+ border-radius: 2px;
+ border: none;
+ /* background-color: #162B32; */
+ color: black;
+ padding: 0.3vw;
+ /* box-shadow: inset 1px 1px 10px 1px white; */
+ box-shadow: 1px 1px 10px 1px black;
+ outline: none;
 }
 
-#sectionWithH1 input::placeholder{
- color:black;
+#sectionWithH1 input::placeholder {
  text-align: center;
+ /* color:black; */
 }
 
-#sectionWithH1 button{
+#sectionWithH1 button {
  /* border:var(--borderRed); */
  margin: 0.6vw auto;
- width:200px;
+ width: 200px;
  border-radius: 6px;
- border:none;
+ border: none;
  text-transform: uppercase;
- padding:0.5vw;
+ padding: 0.5vw;
  font-weight: 900;
- background-color: goldenrod;
+ background-color: #FF4838;
+ box-shadow: 1px 1px 10px 1px black;
+ outline: none;
 }
+
 
 /* ________________________________________
 MAIN SECTION
 ________________________________________ */
 
-
-main{
+main {
  /* border:var(--borderYellow); */
  /* height:80%; */
- width:650px;
- margin: 2vw auto;
- display:grid;
- grid-template:
- [row1-start] ". PM" auto [row1-end]
- [row2-start] "IF TOPM" auto [row2-end]
- [row3-start] ". PES" auto [row3-end]
- [row4-start] "IT TOPES" auto [row4-end]
- [row5-start] ". QA" auto [row5-end]
- [row6-start] "IB TOQA" auto [row6-end]
- / [column1-start] 1fr [column2-start] auto [column3-start];
+ width: 650px;
+ margin: 4vw auto;
+ display: grid;
+ grid-template: [row1-start] ". PM" auto [row1-end] [row2-start] "IF TOPM" auto [row2-end] [row3-start] ". PES" auto [row3-end] [row4-start] "IT TOPES" auto [row4-end] [row5-start] ". QA" auto [row5-end] [row6-start] "IB TOQA" auto [row6-end] / [column1-start] 1fr [column2-start] auto [column3-start];
 }
 
-.iconFeatures{
- margin-right:1.5vw;
+.iconFeatures {
+ margin-right: 1.5vw;
 }
 
-#iconFire{
- grid-area:IF;
+#iconFire {
+ grid-area: IF;
 }
 
-#premiumMaterials{
- grid-area:PM;
+#premiumMaterials {
+ grid-area: PM;
  /* border:var(--borderGreen); */
 }
 
-#textOfPremiumMaterials{
- grid-area:TOPM;
+#textOfPremiumMaterials {
+ grid-area: TOPM;
  /* border:var(--borderRed); */
 }
 
-#iconTruck{
- grid-area:IT;
+#iconTruck {
+ grid-area: IT;
  /* border:var(--borderBlack); */
 }
 
-#premiumEastShipping{
- grid-area:PES;
- margin-top:2vw;
+#premiumEastShipping {
+ grid-area: PES;
+ margin-top: 2vw;
  /* border:var(--borderGreen); */
 }
 
-#textOfPremiumEastShipping{
- grid-area:TOPES;
+#textOfPremiumEastShipping {
+ grid-area: TOPES;
  /* border:var(--borderRed); */
 }
 
-#iconBattery{
- grid-area:IB;
+#iconBattery {
+ grid-area: IB;
  /* border:var(--borderBlack); */
 }
 
-#qualityAssurance{
- grid-area:QA;
- margin-top:2vw;
+#qualityAssurance {
+ grid-area: QA;
+ margin-top: 2vw;
  /* border:var(--borderGreen); */
 }
 
-#textOfQualityAssurance{
- grid-area:TOQA;
+#textOfQualityAssurance {
+ grid-area: TOQA;
  /* border:var(--borderRed); */
 }
 
@@ -217,44 +242,50 @@ main{
 VIDEO FROM YOUTUBE
 ________________________________________ */
 
-iframe{
- display:flex;
- width:500px;
- height:300px;
- margin:3vw auto;
+iframe {
+ display: flex;
+ width: 500px;
+ height: 300px;
+ margin: 6vw auto;
  border-radius: 6px;
  box-shadow: 1px 1px 7px 2px black;
 }
+
 
 /* ________________________________________
 PRICES
 ________________________________________ */
 
-#containerOfAllTheCartToSell{
- border:var(--borderGreen);
- width:100%;
- /* height: 12%; */
- margin:auto;
- display:flex;
+#containerOfAllTheCartToSell {
+ /* border:var(--borderGreen); */
+ width: 100%;
+ /* height: 100%; */
+ margin: 6vw auto 1.2vw auto;
+ display: flex;
  flex-flow: row wrap;
  justify-content: center;
-
 }
 
-#sectionOfTenorTrombone{
- border:var(--borderBlack);
- /* border:1px black solid; */
+#sectionOfTenorTrombone, #sectionOfBassTrombone, #sectionOfValveTrombone {
+ border: 3px solid #162B32;
  border-top-left-radius: 40px;
- width:250px;
+ border-top-right-radius: 40px;
+ border-bottom-left-radius: 6px;
+ border-bottom-right-radius: 6px;
+ box-shadow: 1px 1px 10px 0px #162B32;
+}
+
+#sectionOfTenorTrombone {
+ /* border:2px solid #162B32;
+ border-top-left-radius: 40px;
+ border-top-right-radius: 40px;
+ border-bottom-left-radius: 6px;
+ border-bottom-right-radius: 6px; */
+ width: 250px;
  height: 300px;
- margin:0 2vw 0 0;
- display:grid;
- grid-template:
- [row1-start] "TitleTT" auto [row1-end]
- [row2-start] "PriceTT " auto [row2-end]
- [row3-start] "TextTT " auto [row3-end]
- [row4-start] "ButtonTT " auto [row4-end]
- / [column1-start] 1fr [column2-start];
+ margin: 0 2vw 0 0;
+ display: grid;
+ grid-template: [row1-start] "TitleTT" auto [row1-end] [row2-start] "PriceTT " auto [row2-end] [row3-start] "TextTT " auto [row3-end] [row4-start] "ButtonTT " auto [row4-end] / [column1-start] auto [column2-start];
  /* width:33%; */
  /* height: 30%; */
  /* margin:auto auto auto 1.2vw; */
@@ -263,134 +294,191 @@ ________________________________________ */
  /* border-radius: 6px; */
 }
 
+
 /* .titleOfCartToSell, priceOfCartToSell, someTextOfCartToSell, buttonOfCartToSell {
  text-align: center;
  height:100%;
 } */
 
-.titleOfCartToSell{
- background-color:whitesmoke;
- border-radius: 60px;
- display:flex;
+.titleOfCartToSell {
+ background-color: #162B32;
+ border-top-left-radius: 30px;
+ border-top-right-radius: 30px;
+ /* border-bottom-left-radius: 6px;
+ border-bottom-right-radius: 6px; */
+ display: flex;
  height: 100%;
- width:100%;
+ width: 100%;
  justify-content: center;
  align-items: center;
+ vertical-align: middle;
+ color: white;
 }
 
-.priceOfCartToSell{
+.priceOfCartToSell {
  font-weight: 900;
  font-size: 1.5rem;
 }
 
-.someTextOfCartToSell{
+.someTextOfCartToSell {
  text-align: center;
+ height: 80px;
 }
 
-.buttonOfCartToSell{
- border:none;
- padding:13px 35px;
- border-radius:6px;
+.buttonOfCartToSell {
+ border: none;
+ padding: 13px 35px;
+ border-radius: 6px;
+ background-color: #FF4838;
+ font-weight: 900;
 }
 
-.buttonOfCartToSell:hover{
- background-color: green;
- color:white;
+.buttonOfCartToSell:hover {
+ background-color: #162B32;
+ color: white;
  cursor: pointer;
 }
 
-
-#titlteTenorTrombone{
- grid-area:TitleTT;
+#titlteTenorTrombone {
+ grid-area: TitleTT;
  /* background-color:gray; */
  /* width:100%; */
  /* text-align: center; */
  /* vertical-align: bottom; */
 }
 
-#priceTenorTrombone{
- grid-area:PriceTT;
+#priceTenorTrombone {
+ grid-area: PriceTT;
 }
 
-#textTenorTrombone{
- grid-area:TextTT;
+#textTenorTrombone {
+ grid-area: TextTT;
 }
 
-#buttonTenorTrombone{
- grid-area:ButtonTT;
+#buttonTenorTrombone {
+ grid-area: ButtonTT;
 }
 
-#sectionOfBassTrombone{
- border:var(--borderRed);
- width:250px;
+#sectionOfBassTrombone {
+ /* border:var(--borderRed); */
+ width: 250px;
  height: 300px;
- margin:0 2vw 0 0;
- display:grid;
- grid-template:
-  [row1-start] "TitleBT " auto [row1-end]
-  [row2-start] "PriceBT" auto [row2-end]
-  [row3-start] "TextBT" auto [row3-end]
-  [row4-start] "ButtonBT" auto [row4-end]
-  / [column1-start] 1fr [column2-start]
- ;
+ margin: 0 2vw 0 0;
+ display: grid;
+ grid-template: [row1-start] "TitleBT " auto [row1-end] [row2-start] "PriceBT" auto [row2-end] [row3-start] "TextBT" auto [row3-end] [row4-start] "ButtonBT" auto [row4-end] / [column1-start] 1fr [column2-start];
  justify-items: center;
  align-items: center;
- border-radius: 6px;
 }
 
-#tittleBassTrombone{
- grid-area:TitleBT;
+#tittleBassTrombone {
+ grid-area: TitleBT;
 }
 
-#priceBassTrombone{
- grid-area:PriceBT;
+#priceBassTrombone {
+ grid-area: PriceBT;
 }
 
-#textBassTrombone{
- grid-area:TextBT;
+#textBassTrombone {
+ grid-area: TextBT;
 }
 
-#buttonBassTrombone{
- grid-area:ButtonBT;
+#buttonBassTrombone {
+ grid-area: ButtonBT;
 }
 
-#sectionOfValveTrombone{
- border:var(--borderBlack);
- width:250px;
+#sectionOfValveTrombone {
+ /* border:var(--borderBlack); */
+ width: 250px;
  height: 300px;
- margin:0 2vw 0 0;
- display:grid;
- grid-template:
- [row1-start] "TitleVT" 1fr [row1-end]
- [row2-start] "PriceVT" 1fr [row2-end]
- [row3-start] "TextVT" 1fr [row3-end]
- [row4-start] "ButtonVT" 1fr [row4-end]
- / [column1-start] 1fr [column2-start];
+ /* margin:0 2vw 0 0; */
+ display: grid;
+ grid-template: [row1-start] "TitleVT" auto [row1-end] [row2-start] "PriceVT" auto [row2-end] [row3-start] "TextVT" auto [row3-end] [row4-start] "ButtonVT" auto [row4-end] / [column1-start] 1fr [column2-start];
  justify-items: center;
  align-items: center;
- border-radius: 6px;
 }
 
-
-
-#titleValveTrombone{
- grid-area:TitleVT;
+#titleValveTrombone {
+ grid-area: TitleVT;
 }
 
-#priceValveTrombone{
- grid-area:PriceVT;
+#priceValveTrombone {
+ grid-area: PriceVT;
 }
 
-#textValveTrombone{
- grid-area:TextVT;
+#textValveTrombone {
+ grid-area: TextVT;
 }
 
-#buttonValveTrombone{
- grid-area:ButtonVT;
+#buttonValveTrombone {
+ grid-area: ButtonVT;
 }
-
 
 
 /* ________________________________________
 FOOTER
 ________________________________________ */
+
+footer {
+ /* border:var(--borderBlack); */
+ background-color: #162B32;
+ border-radius: 6px;
+ color: white;
+ margin: 2vw auto;
+ /* padding:2vw auto; */
+ width: 800px;
+ display: grid;
+ grid-template: [row1-start] "PRIVACY TERMS CONTACT" auto [row1-end] [row2-start] "COPYRIGHT COPYRIGHT COPYRIGHT" auto [row2-end] /150px 150px 150px;
+ justify-items: end;
+ justify-content: end;
+ box-shadow: inset 1px 1px 10px 0px white;
+}
+
+.firstColumnFooter {
+ padding: 0.9vw 0.8vw;
+}
+
+.secondColumnFooter {
+ padding: 0 0.2vw 0.2vw 0;
+}
+
+#privacy {
+ grid-area: PRIVACY;
+ /* border:var(--borderRed); */
+}
+
+#terms {
+ grid-area: TERMS;
+}
+
+#contact {
+ grid-area: CONTACT;
+}
+
+#copyright {
+ grid-area: COPYRIGHT;
+}
+
+
+/* ________________________________________
+MEDIA QUERIES
+___________________________________________*/
+
+@media only screen and (max-width: 240px){
+ nav{
+  display:flex;
+  flex-flow:column wrap;
+  position:fixed;
+ }
+ 
+ #sectionOfTenorTrombone, #sectionOfBassTrombone, #sectionOfValveTrombone {
+  width: 85%;
+  margin:3.8vw auto;
+ }
+ footer {
+  /* border: var(--borderGreen); */
+  width: 70%;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+ }
+}
