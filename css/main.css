@@ -14,7 +14,8 @@
  box-sizing: border-box;
  font-family: 'Castoro', serif;
  text-decoration: none;
- color:black; /*See how the WAI tool react to this*/
+ color: black;
+ /*See how the WAI tool react to this*/
 }
 
 body {
@@ -87,7 +88,7 @@ nav ul li a:active {
 }
 
 /* ________________________________________
-SECTION WITH THE ONLY H1
+FORM TO SUBMIT EMAIL
 ________________________________________ */
 
 .toMoveOnThePage {
@@ -102,7 +103,7 @@ ________________________________________ */
  word-wrap: normal !important;
 }
 
-#sectionWithH1 {
+form {
  /* border:var(--borderBlack); */
  display: flex;
  flex-flow: column wrap;
@@ -111,7 +112,7 @@ ________________________________________ */
  margin: 10.8vw auto 0 auto;
 }
 
-#sectionWithH1 h1 {
+form h1 {
  /* border:var(--borderBlue); */
  /* width:100%; */
  text-align: center;
@@ -132,7 +133,7 @@ ________________________________________ */
  word-wrap: normal !important;
 }
 
-#sectionWithH1 input {
+form input {
  /* border:var(--borderGreen); */
  width: 400px;
  margin: 1.2vw auto 1.2vw;
@@ -146,12 +147,12 @@ ________________________________________ */
  outline: none;
 }
 
-#sectionWithH1 input::placeholder {
+form input::placeholder {
  text-align: center;
  /* color:black; */
 }
 
-#sectionWithH1 button {
+form #submit {
  /* border:var(--borderRed); */
  margin: 0.6vw auto;
  width: 200px;
@@ -239,7 +240,7 @@ iframe {
  margin: 6vw auto;
  border-radius: 6px;
  box-shadow: 1px 1px 7px 2px black;
- border:none;
+ border: none;
 }
 
 /* ________________________________________
@@ -472,7 +473,7 @@ ___________________________________________*/
 
 @media only screen and (max-width: 820px) {
  /* ________________________________________
-NAV BAR
+NAV-BAR
 ________________________________________ */
  nav {
   /* border:var(--borderBlack); */
@@ -496,9 +497,9 @@ ________________________________________ */
   margin: 0.5vw 0 0 0;
  }
  /* ________________________________________
-SECTION WITH THE ONLY H1
+FORM TO SUBMIT EMAIL
 ________________________________________ */
- #sectionWithH1 {
+ form {
   margin: 22.8vw auto 0 auto;
  }
  /* ________________________________________
@@ -541,12 +542,12 @@ ________________________________________ */
  }
  @media only screen and (max-width: 600px) {
   /* ________________________________________
-SECTION WITH THE ONLY H1
+FORM TO SUBMIT EMAIL
 ________________________________________ */
-  #sectionWithH1 {
+  form {
    margin: 28.8vw auto 0 auto;
   }
-  #sectionWithH1 h1 {
+  form h1 {
    width: 410px;
    margin: auto;
    /* border:var(--borderBlack) */
@@ -557,24 +558,24 @@ ________________________________________ */
  }
  @media only screen and (max-width: 420px) {
   /* ________________________________________
-SECTION WITH THE ONLY H1
+FORM TO SUBMIT EMAIL
 ________________________________________ */
-  #sectionWithH1 {
+  form {
    margin: 35.8vw auto 13vw auto;
    display: flex;
    justify-content: center;
    align-content: center;
    /* border: var(--borderBlack); */
   }
-  #sectionWithH1 h1 {
+  form h1 {
    width: 85%;
   }
-  #sectionWithH1 input {
+  form input {
    width: 220px;
   }
  }
  @media only screen and (max-width: 320px) {
-  #sectionWithH1 {
+  form {
    margin: 42.8vw auto 13vw auto;
   }
   /* ________________________________________

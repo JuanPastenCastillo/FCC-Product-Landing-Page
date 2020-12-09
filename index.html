@@ -9,43 +9,43 @@
 </head>
 
 <body>
+
  <!-- ________________________________________
  NAV BAR
 ________________________________________ -->
- <nav id=navBar>
-  <a href="#sectionWithH1" id="logo">
-   <img src="./images/original_trombones2.png" alt="">
-  </a>
-  <ul>
-   <li>
-    <a href="#moveToFeatures">Features</a>
-   </li>
-
-   <li>
-    <a href="#moveToVideo">How it works</a>
-   </li>
-
-   <li>
-    <a href="#moveToCartToSell">Pricing</a>
-   </li>
-  </ul>
- </nav>
+ <header id="header">
+  <nav id=nav-bar>
+   <a href="#sectionWithH1" id="logo">
+    <img src="./images/original_trombones2.png" alt="" id="header-img">
+   </a>
+   <ul>
+    <li>
+     <a href="#moveToFeatures" class="nav-link">Features</a>
+    </li>
+    <li>
+     <a href="#moveToVideo" class="nav-link">How it works</a>
+    </li>
+    <li>
+     <a href="#moveToCartToSell" class="nav-link">Pricing</a>
+    </li>
+   </ul>
+  </nav>
+ </header>
 
  <!-- ________________________________________
- SECTION WITH THE ONLY H1
+ FORM TO SUBMIT EMAIL
 ________________________________________ -->
 
- <form id="sectionWithH1" action="formSuccess.html" name="surveyToGiveEmails">
+ <form id="form" action="https://www.freecodecamp.com/email-submit" name="surveyToGiveEmails">
   <h1>
    Handcrafted, home-made masterpieces
   </h1>
-  <label for="yourEmailToContactForOriginalTrombones" class="screenReaderText">
+  <label for="submit" class="screenReaderText">
    If you wish contact with the Original Trombones, please enter your email in the next input
   </label>
   <input type="email" placeholder="Enter your email here to contact with the Original Trombones" required
-   title="Enter your email here to contact with the Original Trombones" id="yourEmailToContactForOriginalTrombones"
-   name="emailOfUser">
-  <button id="toFocusOnFeatures">Get started</button>
+   title="Enter your email here to contact with the Original Trombones" id="email" name="email">
+  <input type="submit" id="submit">
  </form>
  <!-- ________________________________________
  MAIN SECTION
@@ -73,7 +73,7 @@ ________________________________________ -->
  VIDEO FROM YOUTUBE
 ________________________________________ -->
  <div id="moveToVideo" class="toMoveOnThePage"></div>
- <iframe id="embebedVideo" src="https://www.youtube.com/embed/_u4zt3MUDr8?autoplay=1&mute=1&mute=1"></iframe>
+ <iframe id="video" src="https://www.youtube.com/embed/_u4zt3MUDr8?autoplay=1&mute=1&mute=1"></iframe>
 
  <!-- ________________________________________
  PRICES
@@ -143,6 +143,7 @@ ________________________________________ -->
   <p id="copyright" class="secondColumnFooter">Created by JuanPasténCastillo</p>
  </footer>
 
+ <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>
