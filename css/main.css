@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
 :root {
- /* font-family:; */
  font-size: 100%;
  --borderRed: 2px red solid;
  --borderBlack: 2px black solid;
@@ -14,13 +13,13 @@
  padding: 0;
  box-sizing: border-box;
  font-family: 'Castoro', serif;
+ text-decoration: none;
 }
 
 body {
  color: #162B32;
  background-color: whitesmoke;
 }
-
 
 /* ________________________________________
 NAV BAR
@@ -30,24 +29,16 @@ nav {
  /* border:var(--borderBlack); */
  display: flex;
  flex-flow: row nowrap;
- /* justify-content: space-between; */
- /* align-items:stretch; */
  width: 100%;
  position: fixed;
  top: 0;
- /* background-color: rgb(250, 250, 250, 0.1); */
- /* background-color:black; */
- /* background: linear-gradient(90deg,
- rgba(131,58,180,1) 0%,
- rgba(253,29,29,1) 50%,
- rgba(252,176,69,1) 100%); */
+ background-color: rgba(84, 164, 191, 0.75);
 }
 
 nav #logo {
  width: 100%;
  /* border:var(--borderRed); */
  display: flex;
- /* justify-content: start; */
 }
 
 nav #logo img {
@@ -82,17 +73,17 @@ nav ul li a {
  padding: 2vw;
  width: 100%;
  text-align: center;
+ border-radius: 6px;
 }
 
 nav ul li a:hover {
- background: #FF4838;
- border-radius: 6px;
+ background: rgba(24, 79, 97, 0.85);
+ color: white;
 }
 
 nav ul li a:active {
  box-shadow: 1px 1px 10px 1px #162B32;
 }
-
 
 /* ________________________________________
 SECTION WITH THE ONLY H1
@@ -173,7 +164,6 @@ ________________________________________ */
  outline: none;
 }
 
-
 /* ________________________________________
 MAIN SECTION
 ________________________________________ */
@@ -237,7 +227,6 @@ main {
  /* border:var(--borderRed); */
 }
 
-
 /* ________________________________________
 VIDEO FROM YOUTUBE
 ________________________________________ */
@@ -250,7 +239,6 @@ iframe {
  border-radius: 6px;
  box-shadow: 1px 1px 7px 2px black;
 }
-
 
 /* ________________________________________
 PRICES
@@ -277,10 +265,10 @@ ________________________________________ */
 
 #sectionOfTenorTrombone {
  /* border:2px solid #162B32;
- border-top-left-radius: 40px;
- border-top-right-radius: 40px;
- border-bottom-left-radius: 6px;
- border-bottom-right-radius: 6px; */
+border-top-left-radius: 40px;
+border-top-right-radius: 40px;
+border-bottom-left-radius: 6px;
+border-bottom-right-radius: 6px; */
  width: 250px;
  height: 300px;
  margin: 0 2vw 0 0;
@@ -294,10 +282,9 @@ ________________________________________ */
  /* border-radius: 6px; */
 }
 
-
 /* .titleOfCartToSell, priceOfCartToSell, someTextOfCartToSell, buttonOfCartToSell {
- text-align: center;
- height:100%;
+text-align: center;
+height:100%;
 } */
 
 .titleOfCartToSell {
@@ -305,7 +292,7 @@ ________________________________________ */
  border-top-left-radius: 30px;
  border-top-right-radius: 30px;
  /* border-bottom-left-radius: 6px;
- border-bottom-right-radius: 6px; */
+border-bottom-right-radius: 6px; */
  display: flex;
  height: 100%;
  width: 100%;
@@ -413,24 +400,39 @@ ________________________________________ */
  grid-area: ButtonVT;
 }
 
-
 /* ________________________________________
 FOOTER
 ________________________________________ */
 
 footer {
  /* border:var(--borderBlack); */
- background-color: #162B32;
+ background-color: rgba(84, 164, 191, 0.85);
  border-radius: 6px;
- color: white;
- margin: 2vw auto;
+ color: black;
+ margin: 2vw auto 0.2vw auto;
  /* padding:2vw auto; */
  width: 800px;
  display: grid;
  grid-template: [row1-start] "PRIVACY TERMS CONTACT" auto [row1-end] [row2-start] "COPYRIGHT COPYRIGHT COPYRIGHT" auto [row2-end] /150px 150px 150px;
  justify-items: end;
  justify-content: end;
- box-shadow: inset 1px 1px 10px 0px white;
+ box-shadow: inset 1px 1px 10px 0px black;
+}
+
+footer a, footer p {
+ font-family: monospace;
+ font-size: 1rem;
+ color: black;
+ border-radius: 6px;
+}
+
+footer a:hover, footer p:hover {
+ color: white;
+ background-color: rgba(24, 79, 97, 0.85);
+}
+
+footer a:active, footer p:active {
+ box-shadow: 1px 1px 10px 1px #162B32;
 }
 
 .firstColumnFooter {
@@ -458,27 +460,132 @@ footer {
  grid-area: COPYRIGHT;
 }
 
+#copyright:hover {
+ text-transform: uppercase;
+}
 
 /* ________________________________________
 MEDIA QUERIES
 ___________________________________________*/
 
-@media only screen and (max-width: 240px){
- nav{
-  display:flex;
-  flex-flow:column wrap;
-  position:fixed;
+@media only screen and (max-width: 820px) {
+ /* ________________________________________
+NAV BAR
+________________________________________ */
+ nav {
+  /* border:var(--borderBlack); */
+  flex-flow: column wrap;
  }
- 
- #sectionOfTenorTrombone, #sectionOfBassTrombone, #sectionOfValveTrombone {
+ nav #logo {
+  /* border: var(--borderBlue); */
+  justify-content: center;
+ }
+ nav #logo img {
+  width: 100%;
+  /* border: var(--borderBlack); */
+ }
+ nav ul {
+  flex-flow: column;
+ }
+ nav ul li a {
+  padding: 0;
+ }
+ nav ul li:first-child {
+  margin: 0.5vw 0 0 0;
+ }
+ /* ________________________________________
+SECTION WITH THE ONLY H1
+________________________________________ */
+ #sectionWithH1 {
+  margin: 22.8vw auto 0 auto;
+ }
+ /* ________________________________________
+MAIN SECTION
+________________________________________ */
+ main {
   width: 85%;
-  margin:3.8vw auto;
  }
+ .textOfFeature {
+  /* border: var(--borderBlack); */
+  padding: 0 0 3vw 0;
+ }
+ /* ________________________________________
+VIDEO FROM YOUTUBE
+________________________________________ */
+ iframe {
+  width: 90%;
+  height: 400px;
+ }
+ /* ________________________________________
+PRICES
+________________________________________ */
+ #containerOfAllTheCartToSell {
+  flex-flow: column wrap;
+ }
+ #sectionOfTenorTrombone, #sectionOfBassTrombone, #sectionOfValveTrombone {
+  width: 250px;
+  margin: 3.8vw auto;
+ }
+ /* ________________________________________
+FOOTER
+________________________________________ */
  footer {
   /* border: var(--borderGreen); */
-  width: 70%;
+  width: 100%;
   display: flex;
-  flex-flow: column;
+  flex-flow: column wrap;
   text-align: center;
+  margin: 2vw auto;
  }
+ @media only screen and (max-width: 600px) {
+  /* ________________________________________
+SECTION WITH THE ONLY H1
+________________________________________ */
+  #sectionWithH1 {
+   margin: 28.8vw auto 0 auto;
+  }
+  #sectionWithH1 h1 {
+   width: 410px;
+   margin: auto;
+   /* border:var(--borderBlack) */
+  }
+  /* ________________________________________
+PRICES
+________________________________________ */
+ }
+ @media only screen and (max-width: 420px) {
+  /* ________________________________________
+SECTION WITH THE ONLY H1
+________________________________________ */
+  #sectionWithH1 {
+   margin: 35.8vw auto 13vw auto;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   /* border: var(--borderBlack); */
+  }
+  #sectionWithH1 h1 {
+   width: 85%;
+  }
+  #sectionWithH1 input {
+   width: 220px;
+  }
+ }
+ @media only screen and (max-width: 320px) {
+  #sectionWithH1 {
+   margin: 42.8vw auto 13vw auto;
+  }
+  /* ________________________________________
+PRICES
+________________________________________ */
+  #sectionOfTenorTrombone, #sectionOfBassTrombone, #sectionOfValveTrombone {
+   width: 220px;
+  }
+ }
+ /* @media only screen and (max-width: 240px){
+nav{
+display:flex;
+flex-flow:column wrap;
+position:fixed;
 }
+} */
