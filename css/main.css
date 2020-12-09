@@ -14,6 +14,7 @@
  box-sizing: border-box;
  font-family: 'Castoro', serif;
  text-decoration: none;
+ color:black; /*See how the WAI tool react to this*/
 }
 
 body {
