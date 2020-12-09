@@ -239,6 +239,7 @@ iframe {
  margin: 6vw auto;
  border-radius: 6px;
  box-shadow: 1px 1px 7px 2px black;
+ border:none;
 }
 
 /* ________________________________________
