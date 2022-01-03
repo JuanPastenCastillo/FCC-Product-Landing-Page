@@ -122,7 +122,7 @@ form h1 {
  /* width:100%; */
  text-align: center;
  margin: 0 0 1.2vw 0;
- padding-top: 100px;
+ padding-top: 10rem;
  /* text-align: center; */
  /* margin:0 0 0.8vw 0; */
 }
@@ -180,6 +180,7 @@ main {
  /* border:var(--borderYellow); */
  /* height:80%; */
  padding-top: 30px;
+ padding-top: 8rem;
  width: 650px;
  margin: 4vw auto;
  display: grid;
@@ -240,15 +241,26 @@ main {
 VIDEO FROM YOUTUBE
 ________________________________________ */
 
+/* .moveToVideo{
+ padding-top: 20rem;
+} */
+
+.moveToVideo{
+ padding-top: 8rem;
+
+}
+
 iframe {
  display: flex;
- width: 500px;
- height: 300px;
+ width: 95vw;
+ height: 85vh;
  margin: 6vw auto;
  border-radius: 6px;
- box-shadow: 1px 1px 7px 2px black;
+ /* box-shadow: 0px 0px 0px 0px black; */
  border: none;
+ padding-top: 9.5rem;
 }
+
 
 /* ________________________________________
 PRICES
@@ -258,6 +270,8 @@ ________________________________________ */
  /* border:var(--borderGreen); */
  width: 100%;
  /* height: 100%; */
+ padding-top: 8rem;
+ padding-bottom: 2rem;
  margin: 6vw auto 1.2vw auto;
  display: flex;
  flex-flow: row wrap;
@@ -434,6 +448,7 @@ footer a, footer p {
  font-size: 1rem;
  color: black;
  border-radius: 6px;
+ padding-right: 10rem;
 }
 
 footer a:hover {
@@ -446,11 +461,11 @@ footer a:active {
 }
 
 .firstColumnFooter {
- padding: 0.9vw 0.8vw;
+ padding: 1.5vw 1.2vw;
 }
 
 .secondColumnFooter {
- padding: 0 0.2vw 0.2vw 0;
+ padding: 0 1.2vw 1.5vw 0;
 }
 
 #privacy {
@@ -526,13 +541,6 @@ ________________________________________ */
   padding: 0 0 3vw 0;
  }
 
- /* ________________________________________
-VIDEO FROM YOUTUBE
-________________________________________ */
- iframe {
-  width: 90%;
-  height: 400px;
- }
 
  /* ________________________________________
 PRICES
@@ -551,11 +559,15 @@ FOOTER
 ________________________________________ */
  footer {
   /* border: var(--borderGreen); */
-  width: 100%;
+  width: 95%;
   display: flex;
   flex-flow: column wrap;
   text-align: center;
   margin: 2vw auto;
+ }
+
+ footer a {
+  text-decoration: underline;
  }
 
  @media only screen and (max-width: 600px) {
