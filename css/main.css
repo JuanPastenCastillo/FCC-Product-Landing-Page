@@ -1,31 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
 
 :root {
- font-size: 100%;
- --borderRed: 2px red solid;
- --borderBlack: 2px black solid;
- --borderGreen: 2px green solid;
- --borderBlue: 2px blue solid;
- --borderYellow: 2px yellow solid;
+  font-size: 100%;
+  --borderRed: 2px red solid;
+  --borderBlack: 2px black solid;
+  --borderGreen: 2px green solid;
+  --borderBlue: 2px blue solid;
+  --borderYellow: 2px yellow solid;
 }
 
 * {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
- font-family: 'Castoro', serif;
- text-decoration: none;
- color: black;
- /*See how the WAI tool react to this*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Castoro', serif;
+  text-decoration: none;
+  color: black;
+  /*See how the WAI tool react to this*/
 }
 
 html {
- scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
- color: #162B32;
- background-color: whitesmoke;
+  color: #162B32;
+  background-color: whitesmoke;
 }
 
 /* ________________________________________
@@ -33,63 +33,63 @@ NAV BAR
 ________________________________________ */
 
 nav {
- /* border:var(--borderBlack); */
- display: flex;
- flex-flow: row nowrap;
- width: 100%;
- position: fixed;
- top: 0;
- background-color: rgba(84, 164, 191, 0.75);
+  /* border:var(--borderBlack); */
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgba(84, 164, 191, 0.75);
 }
 
 nav #logo {
- width: 100%;
- /* border:var(--borderRed); */
- display: flex;
+  width: 100%;
+  /* border:var(--borderRed); */
+  display: flex;
 }
 
 nav #logo img {
- /* border:var(--borderGreen); */
- max-width: 100%;
- margin: 0;
- padding: 0;
- /* align-items: stretch; */
- /* display:block; */
+  /* border:var(--borderGreen); */
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  /* align-items: stretch; */
+  /* display:block; */
 }
 
 nav ul {
- /* border: var(--borderRed); */
- list-style-type: none;
- width: 100%;
- display: flex;
- justify-content: center;
- align-items: center;
+  /* border: var(--borderRed); */
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav ul li {
- /* border: var(--borderBlue); */
- display: flex;
- width: 100%;
+  /* border: var(--borderBlue); */
+  display: flex;
+  width: 100%;
 }
 
 nav ul li a {
- /* border: var(--borderGreen); */
- text-decoration: none;
- color: black;
- font-weight: 900;
- padding: 2vw;
- width: 100%;
- text-align: center;
- border-radius: 6px;
+  /* border: var(--borderGreen); */
+  text-decoration: none;
+  color: black;
+  font-weight: 900;
+  padding: 2vw;
+  width: 100%;
+  text-align: center;
+  border-radius: 6px;
 }
 
 nav ul li a:hover {
- background: rgba(24, 79, 97, 0.85);
- color: white;
+  background: rgba(24, 79, 97, 0.85);
+  color: white;
 }
 
 nav ul li a:active {
- box-shadow: 1px 1px 10px 1px #162B32;
+  box-shadow: 1px 1px 10px 1px #162B32;
 }
 
 /* ________________________________________
@@ -97,79 +97,79 @@ FORM TO SUBMIT EMAIL
 ________________________________________ */
 
 .toMoveOnThePage {
- border: 0;
- clip: rect(1px, 1px, 1px, 1px);
- clip-path: inset(50%);
- height: 1px;
- margin: -1px;
- width: 1px;
- overflow: hidden;
- position: absolute !important;
- word-wrap: normal !important;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  width: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  word-wrap: normal !important;
 }
 
 form {
- /* border:var(--borderBlack); */
- display: flex;
- flex-flow: column wrap;
- justify-content: center;
- align-content: center;
- margin: 10.8vw auto 0 auto;
+  /* border:var(--borderBlack); */
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  margin: 10.8vw auto 0 auto;
 }
 
 form h1 {
- /* border:var(--borderBlue); */
- /* width:100%; */
- text-align: center;
- margin: 0 0 1.2vw 0;
- padding-top: 10rem;
- /* text-align: center; */
- /* margin:0 0 0.8vw 0; */
+  /* border:var(--borderBlue); */
+  /* width:100%; */
+  text-align: center;
+  margin: 0 0 1.2vw 0;
+  padding-top: 10rem;
+  /* text-align: center; */
+  /* margin:0 0 0.8vw 0; */
 }
 
 .screenReaderText {
- border: 0;
- clip: rect(1px, 1px, 1px, 1px);
- clip-path: inset(50%);
- height: 1px;
- margin: -1px;
- width: 1px;
- overflow: hidden;
- position: absolute !important;
- word-wrap: normal !important;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  width: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  word-wrap: normal !important;
 }
 
 form input {
- /* border:var(--borderGreen); */
- width: 400px;
- margin: 1.2vw auto 1.2vw;
- border-radius: 2px;
- border: none;
- /* background-color: #162B32; */
- color: black;
- padding: 0.3vw;
- /* box-shadow: inset 1px 1px 10px 1px white; */
- box-shadow: 1px 1px 10px 1px black;
- outline: none;
+  /* border:var(--borderGreen); */
+  width: 400px;
+  margin: 1.2vw auto 1.2vw;
+  border-radius: 2px;
+  border: none;
+  /* background-color: #162B32; */
+  color: black;
+  padding: 0.3vw;
+  /* box-shadow: inset 1px 1px 10px 1px white; */
+  box-shadow: 1px 1px 10px 1px black;
+  outline: none;
 }
 
 form input::placeholder {
- text-align: center;
- /* color:black; */
+  text-align: center;
+  /* color:black; */
 }
 
 form #submit {
- /* border:var(--borderRed); */
- margin: 0.6vw auto;
- width: 200px;
- border-radius: 6px;
- border: none;
- text-transform: uppercase;
- padding: 0.5vw;
- font-weight: 900;
- background-color: #FF4838;
- box-shadow: 1px 1px 10px 1px black;
- outline: none;
+  /* border:var(--borderRed); */
+  margin: 0.6vw auto;
+  width: 200px;
+  border-radius: 6px;
+  border: none;
+  text-transform: uppercase;
+  padding: 0.5vw;
+  font-weight: 900;
+  background-color: #FF4838;
+  box-shadow: 1px 1px 10px 1px black;
+  outline: none;
 }
 
 /* ________________________________________
@@ -177,64 +177,64 @@ MAIN SECTION
 ________________________________________ */
 
 main {
- /* border:var(--borderYellow); */
- /* height:80%; */
- padding-top: 30px;
- padding-top: 8rem;
- width: 650px;
- margin: 4vw auto;
- display: grid;
- grid-template: [row1-start] ". PM"auto [row1-end] [row2-start] "IF TOPM"auto [row2-end] [row3-start] ". PES"auto [row3-end] [row4-start] "IT TOPES"auto [row4-end] [row5-start] ". QA"auto [row5-end] [row6-start] "IB TOQA"auto [row6-end] / [column1-start] 1fr [column2-start] auto [column3-start];
+  /* border:var(--borderYellow); */
+  /* height:80%; */
+  padding-top: 30px;
+  padding-top: 8rem;
+  width: 650px;
+  margin: 4vw auto;
+  display: grid;
+  grid-template: [row1-start] ". PM"auto [row1-end] [row2-start] "IF TOPM"auto [row2-end] [row3-start] ". PES"auto [row3-end] [row4-start] "IT TOPES"auto [row4-end] [row5-start] ". QA"auto [row5-end] [row6-start] "IB TOQA"auto [row6-end] / [column1-start] 1fr [column2-start] auto [column3-start];
 }
 
 .iconFeatures {
- margin-right: 1.5vw;
+  margin-right: 1.5vw;
 }
 
 #iconFire {
- grid-area: IF;
+  grid-area: IF;
 }
 
 #premiumMaterials {
- grid-area: PM;
- /* border:var(--borderGreen); */
+  grid-area: PM;
+  /* border:var(--borderGreen); */
 }
 
 #textOfPremiumMaterials {
- grid-area: TOPM;
- /* border:var(--borderRed); */
+  grid-area: TOPM;
+  /* border:var(--borderRed); */
 }
 
 #iconTruck {
- grid-area: IT;
- /* border:var(--borderBlack); */
+  grid-area: IT;
+  /* border:var(--borderBlack); */
 }
 
 #premiumEastShipping {
- grid-area: PES;
- margin-top: 2vw;
- /* border:var(--borderGreen); */
+  grid-area: PES;
+  margin-top: 2vw;
+  /* border:var(--borderGreen); */
 }
 
 #textOfPremiumEastShipping {
- grid-area: TOPES;
- /* border:var(--borderRed); */
+  grid-area: TOPES;
+  /* border:var(--borderRed); */
 }
 
 #iconBattery {
- grid-area: IB;
- /* border:var(--borderBlack); */
+  grid-area: IB;
+  /* border:var(--borderBlack); */
 }
 
 #qualityAssurance {
- grid-area: QA;
- margin-top: 2vw;
- /* border:var(--borderGreen); */
+  grid-area: QA;
+  margin-top: 2vw;
+  /* border:var(--borderGreen); */
 }
 
 #textOfQualityAssurance {
- grid-area: TOQA;
- /* border:var(--borderRed); */
+  grid-area: TOQA;
+  /* border:var(--borderRed); */
 }
 
 /* ________________________________________
@@ -245,20 +245,20 @@ ________________________________________ */
  padding-top: 20rem;
 } */
 
-.moveToVideo{
- padding-top: 8rem;
+.moveToVideo {
+  padding-top: 8rem;
 
 }
 
 iframe {
- display: flex;
- width: 95vw;
- height: 85vh;
- margin: 6vw auto;
- border-radius: 6px;
- /* box-shadow: 0px 0px 0px 0px black; */
- border: none;
- padding-top: 9.5rem;
+  display: flex;
+  width: 95vw;
+  height: 85vh;
+  margin: 6vw auto;
+  border-radius: 6px;
+  /* box-shadow: 0px 0px 0px 0px black; */
+  border: none;
+  padding-top: 9.5rem;
 }
 
 
@@ -267,43 +267,43 @@ PRICES
 ________________________________________ */
 
 #containerOfAllTheCartToSell {
- /* border:var(--borderGreen); */
- width: 100%;
- /* height: 100%; */
- padding-top: 8rem;
- padding-bottom: 2rem;
- margin: 6vw auto 1.2vw auto;
- display: flex;
- flex-flow: row wrap;
- justify-content: center;
+  /* border:var(--borderGreen); */
+  width: 100%;
+  /* height: 100%; */
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+  margin: 6vw auto 1.2vw auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 #sectionOfTenorTrombone, #sectionOfBassTrombone, #sectionOfValveTrombone {
- border: 3px solid #162B32;
- border-top-left-radius: 40px;
- border-top-right-radius: 40px;
- border-bottom-left-radius: 6px;
- border-bottom-right-radius: 6px;
- box-shadow: 1px 1px 10px 0px #162B32;
+  border: 3px solid #162B32;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  box-shadow: 1px 1px 10px 0px #162B32;
 }
 
 #sectionOfTenorTrombone {
- /* border:2px solid #162B32;
+  /* border:2px solid #162B32;
 border-top-left-radius: 40px;
 border-top-right-radius: 40px;
 border-bottom-left-radius: 6px;
 border-bottom-right-radius: 6px; */
- width: 250px;
- height: 300px;
- margin: 0 2vw 0 0;
- display: grid;
- grid-template: [row1-start] "TitleTT"auto [row1-end] [row2-start] "PriceTT "auto [row2-end] [row3-start] "TextTT "auto [row3-end] [row4-start] "ButtonTT "auto [row4-end] / [column1-start] auto [column2-start];
- /* width:33%; */
- /* height: 30%; */
- /* margin:auto auto auto 1.2vw; */
- justify-items: center;
- align-items: center;
- /* border-radius: 6px; */
+  width: 250px;
+  height: 300px;
+  margin: 0 2vw 0 0;
+  display: grid;
+  grid-template: [row1-start] "TitleTT"auto [row1-end] [row2-start] "PriceTT "auto [row2-end] [row3-start] "TextTT "auto [row3-end] [row4-start] "ButtonTT "auto [row4-end] / [column1-start] auto [column2-start];
+  /* width:33%; */
+  /* height: 30%; */
+  /* margin:auto auto auto 1.2vw; */
+  justify-items: center;
+  align-items: center;
+  /* border-radius: 6px; */
 }
 
 /* .titleOfCartToSell, priceOfCartToSell, someTextOfCartToSell, buttonOfCartToSell {
@@ -312,116 +312,116 @@ height:100%;
 } */
 
 .titleOfCartToSell {
- background-color: #162B32;
- border-top-left-radius: 30px;
- border-top-right-radius: 30px;
- /* border-bottom-left-radius: 6px;
+  background-color: #162B32;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  /* border-bottom-left-radius: 6px;
 border-bottom-right-radius: 6px; */
- display: flex;
- height: 100%;
- width: 100%;
- justify-content: center;
- align-items: center;
- vertical-align: middle;
- color: white;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  color: white;
 }
 
 .priceOfCartToSell {
- font-weight: 900;
- font-size: 1.5rem;
+  font-weight: 900;
+  font-size: 1.5rem;
 }
 
 .someTextOfCartToSell {
- text-align: center;
- height: 80px;
+  text-align: center;
+  height: 80px;
 }
 
 .buttonOfCartToSell {
- border: none;
- padding: 13px 35px;
- border-radius: 6px;
- background-color: #FF4838;
- font-weight: 900;
+  border: none;
+  padding: 13px 35px;
+  border-radius: 6px;
+  background-color: #FF4838;
+  font-weight: 900;
 }
 
 .buttonOfCartToSell:hover {
- background-color: #162B32;
- color: white;
- cursor: pointer;
+  background-color: #162B32;
+  color: white;
+  cursor: pointer;
 }
 
 #titlteTenorTrombone {
- grid-area: TitleTT;
- /* background-color:gray; */
- /* width:100%; */
- /* text-align: center; */
- /* vertical-align: bottom; */
+  grid-area: TitleTT;
+  /* background-color:gray; */
+  /* width:100%; */
+  /* text-align: center; */
+  /* vertical-align: bottom; */
 }
 
 #priceTenorTrombone {
- grid-area: PriceTT;
+  grid-area: PriceTT;
 }
 
 #textTenorTrombone {
- grid-area: TextTT;
+  grid-area: TextTT;
 }
 
 #buttonTenorTrombone {
- grid-area: ButtonTT;
+  grid-area: ButtonTT;
 }
 
 #sectionOfBassTrombone {
- /* border:var(--borderRed); */
- width: 250px;
- height: 300px;
- margin: 0 2vw 0 0;
- display: grid;
- grid-template: [row1-start] "TitleBT "auto [row1-end] [row2-start] "PriceBT"auto [row2-end] [row3-start] "TextBT"auto [row3-end] [row4-start] "ButtonBT"auto [row4-end] / [column1-start] 1fr [column2-start];
- justify-items: center;
- align-items: center;
+  /* border:var(--borderRed); */
+  width: 250px;
+  height: 300px;
+  margin: 0 2vw 0 0;
+  display: grid;
+  grid-template: [row1-start] "TitleBT "auto [row1-end] [row2-start] "PriceBT"auto [row2-end] [row3-start] "TextBT"auto [row3-end] [row4-start] "ButtonBT"auto [row4-end] / [column1-start] 1fr [column2-start];
+  justify-items: center;
+  align-items: center;
 }
 
 #tittleBassTrombone {
- grid-area: TitleBT;
+  grid-area: TitleBT;
 }
 
 #priceBassTrombone {
- grid-area: PriceBT;
+  grid-area: PriceBT;
 }
 
 #textBassTrombone {
- grid-area: TextBT;
+  grid-area: TextBT;
 }
 
 #buttonBassTrombone {
- grid-area: ButtonBT;
+  grid-area: ButtonBT;
 }
 
 #sectionOfValveTrombone {
- /* border:var(--borderBlack); */
- width: 250px;
- height: 300px;
- /* margin:0 2vw 0 0; */
- display: grid;
- grid-template: [row1-start] "TitleVT"auto [row1-end] [row2-start] "PriceVT"auto [row2-end] [row3-start] "TextVT"auto [row3-end] [row4-start] "ButtonVT"auto [row4-end] / [column1-start] 1fr [column2-start];
- justify-items: center;
- align-items: center;
+  /* border:var(--borderBlack); */
+  width: 250px;
+  height: 300px;
+  /* margin:0 2vw 0 0; */
+  display: grid;
+  grid-template: [row1-start] "TitleVT"auto [row1-end] [row2-start] "PriceVT"auto [row2-end] [row3-start] "TextVT"auto [row3-end] [row4-start] "ButtonVT"auto [row4-end] / [column1-start] 1fr [column2-start];
+  justify-items: center;
+  align-items: center;
 }
 
 #titleValveTrombone {
- grid-area: TitleVT;
+  grid-area: TitleVT;
 }
 
 #priceValveTrombone {
- grid-area: PriceVT;
+  grid-area: PriceVT;
 }
 
 #textValveTrombone {
- grid-area: TextVT;
+  grid-area: TextVT;
 }
 
 #buttonValveTrombone {
- grid-area: ButtonVT;
+  grid-area: ButtonVT;
 }
 
 /* ________________________________________
@@ -429,60 +429,60 @@ FOOTER
 ________________________________________ */
 
 footer {
- /* border:var(--borderBlack); */
- background-color: rgba(84, 164, 191, 0.85);
- border-radius: 6px;
- color: black;
- margin: 2vw auto 0.2vw auto;
- /* padding:2vw auto; */
- width: 800px;
- display: grid;
- grid-template: [row1-start]  "PRIVACY TERMS CONTACT" auto [row1-end] [row2-start] "COPYRIGHT COPYRIGHT COPYRIGHT"auto [row2-end] /150px 150px 150px;
- justify-items: end;
- justify-content: end;
- box-shadow: inset 1px 1px 10px 0px black;
+  /* border:var(--borderBlack); */
+  background-color: rgba(84, 164, 191, 0.85);
+  border-radius: 6px;
+  color: black;
+  margin: 2vw auto 0.2vw auto;
+  /* padding:2vw auto; */
+  width: 800px;
+  display: grid;
+  grid-template: [row1-start] "PRIVACY CONTACT"auto [row1-end] [row2-start] "COPYRIGHT COPYRIGHT "auto [row2-end] /150px 150px;
+  justify-items: end;
+  justify-content: end;
+  box-shadow: inset 1px 1px 10px 0px black;
 }
 
 footer a, footer p {
- font-family: monospace;
- font-size: 1rem;
- color: black;
- border-radius: 6px;
- padding-right: 10rem;
+  font-family: monospace;
+  font-size: 1rem;
+  color: black;
+  border-radius: 6px;
+  padding-right: 10rem;
 }
 
 footer a:hover {
- color: white;
- background-color: rgba(24, 79, 97, 0.85);
+  color: white;
+  background-color: rgba(24, 79, 97, 0.85);
 }
 
 footer a:active {
- box-shadow: 1px 1px 10px 1px #162B32;
+  box-shadow: 1px 1px 10px 1px #162B32;
 }
 
 .firstColumnFooter {
- padding: 1.5vw 1.2vw;
+  padding: 1.5vw 1.2vw;
 }
 
 .secondColumnFooter {
- padding: 0 1.2vw 1.5vw 0;
+  padding: 0 1.2vw 1.5vw 0;
 }
 
 #privacy {
- grid-area: PRIVACY;
- /* border:var(--borderRed); */
+  grid-area: PRIVACY;
+  /* border:var(--borderRed); */
 }
 
 #terms {
- grid-area: TERMS;
+  grid-area: TERMS;
 }
 
 #contact {
- grid-area: CONTACT;
+  grid-area: CONTACT;
 }
 
 #copyright {
- grid-area: COPYRIGHT;
+  grid-area: COPYRIGHT;
 }
 
 
@@ -492,138 +492,138 @@ ___________________________________________*/
 
 @media only screen and (max-width: 820px) {
 
- /* ________________________________________
+  /* ________________________________________
 NAV-BAR
 ________________________________________ */
- nav {
-  /* border:var(--borderBlack); */
-  flex-flow: column wrap;
- }
+  nav {
+    /* border:var(--borderBlack); */
+    flex-flow: column wrap;
+  }
 
- nav #logo {
-  /* border: var(--borderBlue); */
-  justify-content: center;
- }
+  nav #logo {
+    /* border: var(--borderBlue); */
+    justify-content: center;
+  }
 
- nav #logo img {
-  width: 100%;
-  /* border: var(--borderBlack); */
- }
+  nav #logo img {
+    width: 100%;
+    /* border: var(--borderBlack); */
+  }
 
- nav ul {
-  flex-flow: column;
- }
+  nav ul {
+    flex-flow: column;
+  }
 
- nav ul li a {
-  padding: 0;
- }
+  nav ul li a {
+    padding: 0;
+  }
 
- nav ul li:first-child {
-  margin: 0.5vw 0 0 0;
- }
+  nav ul li:first-child {
+    margin: 0.5vw 0 0 0;
+  }
 
- /* ________________________________________
+  /* ________________________________________
 FORM TO SUBMIT EMAIL
 ________________________________________ */
- form {
-  margin: 22.8vw auto 0 auto;
- }
+  form {
+    margin: 22.8vw auto 0 auto;
+  }
 
- /* ________________________________________
+  /* ________________________________________
 MAIN SECTION
 ________________________________________ */
- main {
-  width: 85%;
- }
+  main {
+    width: 85%;
+  }
 
- .textOfFeature {
-  /* border: var(--borderBlack); */
-  padding: 0 0 3vw 0;
- }
+  .textOfFeature {
+    /* border: var(--borderBlack); */
+    padding: 0 0 3vw 0;
+  }
 
 
- /* ________________________________________
+  /* ________________________________________
 PRICES
 ________________________________________ */
- #containerOfAllTheCartToSell {
-  flex-flow: column wrap;
- }
+  #containerOfAllTheCartToSell {
+    flex-flow: column wrap;
+  }
 
- #sectionOfTenorTrombone, #sectionOfBassTrombone, #sectionOfValveTrombone {
-  width: 250px;
-  margin: 3.8vw auto;
- }
+  #sectionOfTenorTrombone, #sectionOfBassTrombone, #sectionOfValveTrombone {
+    width: 250px;
+    margin: 3.8vw auto;
+  }
 
- /* ________________________________________
+  /* ________________________________________
 FOOTER
 ________________________________________ */
- footer {
-  /* border: var(--borderGreen); */
-  width: 95%;
-  display: flex;
-  flex-flow: column wrap;
-  text-align: center;
-  margin: 2vw auto;
- }
+  footer {
+    /* border: var(--borderGreen); */
+    width: 95%;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    margin: 2vw auto;
+  }
 
- footer a {
-  text-decoration: underline;
- }
+  footer a {
+    text-decoration: underline;
+  }
 
- @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
 
-  /* ________________________________________
+    /* ________________________________________
 FORM TO SUBMIT EMAIL
 ________________________________________ */
-  form {
-   margin: 28.8vw auto 0 auto;
-  }
+    form {
+      margin: 28.8vw auto 0 auto;
+    }
 
-  form h1 {
-   width: 410px;
-   margin: auto;
-   /* border:var(--borderBlack) */
-  }
+    form h1 {
+      width: 410px;
+      margin: auto;
+      /* border:var(--borderBlack) */
+    }
 
-  /* ________________________________________
+    /* ________________________________________
 PRICES
 ________________________________________ */
- }
+  }
 
- @media only screen and (max-width: 420px) {
+  @media only screen and (max-width: 420px) {
 
-  /* ________________________________________
+    /* ________________________________________
 FORM TO SUBMIT EMAIL
 ________________________________________ */
-  form {
-   margin: 35.8vw auto 13vw auto;
-   display: flex;
-   justify-content: center;
-   align-content: center;
-   /* border: var(--borderBlack); */
+    form {
+      margin: 35.8vw auto 13vw auto;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      /* border: var(--borderBlack); */
+    }
+
+    form h1 {
+      width: 85%;
+    }
+
+    form input {
+      width: 220px;
+    }
   }
 
-  form h1 {
-   width: 85%;
-  }
+  @media only screen and (max-width: 320px) {
+    form {
+      margin: 42.8vw auto 13vw auto;
+    }
 
-  form input {
-   width: 220px;
-  }
- }
-
- @media only screen and (max-width: 320px) {
-  form {
-   margin: 42.8vw auto 13vw auto;
-  }
-
-  /* ________________________________________
+    /* ________________________________________
 PRICES
 ________________________________________ */
-  #sectionOfTenorTrombone, #sectionOfBassTrombone, #sectionOfValveTrombone {
-   width: 220px;
+    #sectionOfTenorTrombone, #sectionOfBassTrombone, #sectionOfValveTrombone {
+      width: 220px;
+    }
   }
- }
 }
 
 /* @media only screen and (max-width: 240px){
